@@ -18,7 +18,8 @@ public class TaskEdit extends StandardEditor<Task> {
 
     @Install(target = Target.DATA_CONTEXT)
     private Set<Object> commitDelegate(SaveContext saveContext) {
-        Task savedTask = taskService.saveTask(getEditedEntity());
+        Task task = getEditedEntity();
+        Task savedTask = taskService.saveTask(task);
         return Set.of(savedTask);
     }
 }
