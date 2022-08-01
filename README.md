@@ -1,3 +1,5 @@
+**ATTENTION: this repository is deprecated in favor of https://github.com/jmix-framework/jmix-samples**
+
 # External Data Source Sample
 
 The project demonstrates how to display and manage data received from the external data source using standard Jmix CRUD screens.
